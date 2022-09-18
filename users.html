@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="catagory.css">
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- start navigation -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark ">
+        <div class="container-md">
+            <a class="navbar-brand w-25 mg" href="#">Projecty</a>
+            <a class="nav-link" href="" style="display:none;" id="user-email"></a>
+            <a href="index.html" class="btn btn-outline-success" id="moveBack"> Go Back</a>
+        </div>
+    </div>
+    <!-- end navigation -->
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <!-- <a href="control_panel.html" id="control">Control Panel</a> -->
+            <a href="addproduct.html" id="create">Create Product</a>
+            <a href="update.html" id="update">Update Product</a>
+            <a href="users.html" id="report">View Users</a>
+        </div>
+    </nav>
+    <div class="form">
+        <h4 style="font-size: 30px;font-weight: bold; text-align: center;"> View All Users </h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        #
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Role
+                    </th>
+                    <th>
+                        update
+                    </th>
+                    <th>
+                        delete
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody id="updateUsers">
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- <script src="js/script.js"></script> -->
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;500;600;700;800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+nav.color-include
+{
+    background-color: hsl(202, 100%, 20%) !important;
+}
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222
+}
+
+h4 {
+    font-size: 20px;
+    color: #222
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+.logo {
+    width: 7%;
+}
+
+
+/* header start */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background: hsl(202, 100%, 20%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 15px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a:active {
+    color: #f2b138;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.protect {
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    padding-top: 78px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.protect .pro {
+    width: 50%;
+    border: 1px solid #003f63;
+}
+
+.protect .pro .test {
+    background-position: 50% 50%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+
+.protect .pro img {
+    transition: opacity 0.5s;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.protect .pro img:hover {
+    opacity: 0;
+}
+
+
+/* protected detiles */
+
+.protect .detelis {
+    width: 50%;
+    height: 50%;
+}
+
+.protect .detelis .text {
+    margin-top: 70px;
+    padding: 25px;
+}
+
+.protect .detelis .text h2 {
+    color: #003f63;
+}
+
+.protect .detelis .text i {
+    font-size: 12px;
+    color: rgb(243, 181, 25)
+}
+
+.button {
+    padding: 25px;
+}
+
+.button button {
+    width: 113px;
+    height: 43px;
+    padding: 6px;
+    background-color: #F2B138;
+    border-radius: 23px;
+    margin: 5px;
+}
+
+.button button svg {
+    width: 21px;
+    color: #fff;
+}
+
+button .svg {
+    width: 21px;
+}
+
+.button button:hover {
+    background-color: #003F63;
+    color: white;
+}
+
+
+/* ende */
+
+
+/* start more */
+
+.more {
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.more .frist {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.more .frist .img {
+    width: 27%;
+    height: 170px;
+    border: 1px solid #003F63;
+    margin: 5px;
+}
+
+.more .frist .img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ;fjgdf */
+
+.more .secound {
+    width: 50%;
+    padding: 20px;
+}
+
+footer .logo2 {
+    width: 15%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #dadada;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 24%;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 17px;
+    margin: 0 0 8px 0;
+    text-decoration: none;
+    color: hsl(202, 100%, 20%);
+}
+
+footer .follow {
+    color: hsl(202, 100%, 20%);
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img {
+    border: 1px solid hsl(202, 100%, 20%);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+.follow i:hover,
+.col a:hover,
+.install .row img:hover {
+    color: #f2b138
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 3% 0;
+    font-weight: 800;
+    background: #dadada;
+}

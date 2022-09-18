@@ -1,0 +1,47 @@
+body {
+    margin: 10px;
+    padding: 10px;
+}
+
+.card {
+    width: fit-content;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+button {
+    font-weight: bolder;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    width: 50%;
+}
+
+#out-btn {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: #003f63;
+    text-transform: capitalize;
+}
+
+#out-btn:hover {
+    background-color: rgb(216, 190, 20);
+    ;
+    color: #003f63;
+}
+
+.container {
+    display: flex;
+    margin: 70px;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 80px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}

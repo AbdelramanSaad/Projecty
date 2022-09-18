@@ -1,0 +1,120 @@
+/* for all body */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* font-family */
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* middle in page */
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* clear for floating content*/
+
+.clear {
+    clear: both;
+}
+
+
+/* header of navigation */
+
+header {
+    background-color: gray;
+}
+
+
+/* remove default anchor styles*/
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(216, 190, 20);
+    transition: all 1s;
+    font-size: 15px;
+}
+
+/* #out-btn {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(216, 190, 20);
+    text-transform: capitalize;
+}
+
+#out-btn:hover {
+    background-color:hsl(202, 100%, 20%);
+    color: white;
+} */
+
+
+/* hidden Ul  */
+
+#user_info {
+    display: none;
+}
+
+
+/* form */
+
+.form-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    font-family: inherit;
+}
+
+.form-content input#email,
+input#password,
+input#username {
+    display: inherit;
+    margin: 50px 0;
+    width: 500px;
+    height: 10px;
+    padding: 20px;
+    border: 2px solid rgb(216, 190, 20);
+    border-radius: 10px;
+    font-family: inherit;
+    outline: none;
+}
+
+#signIn {
+    display: inherit;
+    padding: 10px;
+    width: 30%;
+    margin-left: auto;
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+    border: 0px solid;
+    font-size: 25px;
+    text-transform: capitalize;
+    transition: color 1s, background-color 1s;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+#signIn:hover {
+    color: black;
+    background-color: rgb(216, 190, 20);
+    border: 2px solid rgb(216, 190, 20);
+}

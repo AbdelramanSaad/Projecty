@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/pro.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- start navigation -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-md">
+            <a class="navbar-brand w-25 mg" href="#">Projecty</a>
+            <!-- toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" onclick="stay(`${y}`)" id="ho">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html" id="cat" onclick="stay(`${y}`)">Categories</a>
+                    </li>
+                    <li class="nav-item" style="display:none;" id="admin"><a class="nav-link" href="users.html"
+                            onclick="stay(`${y}`)">Admin</a></li>
+                    <li class="nav-item" style="width:120px ;">
+                        <a class="nav-link" href="cart.html" id="car" onclick="stay(`${y}`)">Cart
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span style="position: relative;right: 17px;bottom: 17px;" id="cartcounter"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-capitalize" href="login.html" id="login-btn">sign
+                            in</a></li>
+                    <li class="nav-item"><a class="nav-link text-capitalize" href="register.html"
+                            id="regeister-btn">sign up</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" style="display:none;" id="user-email"></a>
+                    </li>
+                    <li class="nav-item"><button class="nav-link btn btn-outline-success" style="display:none;"
+                            id="out-btn">logout</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navigation -->
+
+    <section class="protect">
+
+        <div class="pro">
+            <div class="test">
+                <figure class="zoom" onmousemove="zoom(event)"
+                    style="background-image: url(./template/img/11.1_660X700_crop_center.webp)">
+
+                    <img src="./template/img/11.1_660X700_crop_center.webp" />
+
+                </figure>
+
+            </div>
+        </div>
+        <div class="detelis">
+            <div class="text">
+
+                <h2>JBL bar 2.1 deep bass</h2>
+                <h3>Rs/599.00</h3>
+                <h3><del>Rs/700.00</del></h3>
+                <p>Hurry up! only 16 products left in stock!</p>
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <hr>
+
+            <div class="button">
+
+                <button type="submit">Add To Cart</button>
+                <button type="submit">Buy It Now</button>
+                <button type="submit"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-heart">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+
+                </button>
+                <br>
+
+                <img src="./template/img/pay.webp" alt="" style="padding:50px">
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="more">
+        <div class="frist">
+            <div class="img">
+                <img src="./template/img/11.1_660X700_crop_center.webp" alt="">
+            </div>
+            <div class="img">
+                <img src="./template/img/9.1.webp" alt="">
+            </div>
+            <div class="img">
+                <img src="./template/img/9.3.webp" alt="">
+            </div>
+            <div class="img">
+                <img src="./template/img/11.1_660X700_crop_center.webp" alt="">
+            </div>
+        </div>
+        <div class="secound">
+            <h2>Product Descriptions</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+                Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec
+                nec justo eget felis facilisis fermentum. Aliquam
+                porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Phasellus ultrices nulla quis nibh.
+                Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus.
+            </p>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo2" src="./logo/img/000000000logo.png">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>50 ELharm Street,Giza</p>
+            <p><strong>Phone: </strong>+020114796593</p>
+            <p><strong>Hours: </strong>9:00 - 23:00 All days</p>
+            <div class="follow">
+                <h4>follow Us</h4>
+                <div class="icons">
+                    <i class=" fa-brands fa-whatsapp "
+                        onclick="window.location.href=  'https://wa.me/+0201147963593'"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter "></i>
+                    <a href="mailto:Abdoahmedsaad95@gmail.com?subject=Testing our mail!&body=This is only a test!"><i
+                            class="fa-solid fa-at "></i></a>
+                    <i class="fa-solid fa-location-dot "
+                        onclick="window.location.href='https://goo.gl/maps/WQvS9jS4seiinYPy5' " target="_blank " )></i>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <h4>About</h4>
+            <a href="# ">About us</a>
+            <a href="# ">Delivary</a>
+            <a href="# ">privacy policy</a>
+            <a href="# ">Terms & conditions</a>
+            <a href="# ">Contact us</a>
+        </div>
+        <div class="col ">
+            <h4>My Account</h4>
+            <a href="# ">Sign in</a>
+            <a href="# ">View Cart</a>
+            <a href="# ">My wishlist</a>
+            <a href="# ">Track My Order</a>
+            <a href="# ">Help</a>
+        </div>
+        <div class="install ">
+            <h4>Install Apps</h4>
+            <p>From App Store or Google</p>
+            <div class="row ">
+                <img src="./logo/img/pay/app.jpg ">
+                <img src="./logo/img/pay/play.jpg ">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="./logo/img/pay/pay.png ">
+        </div>
+    </footer>
+    <div>
+        <div class="copyright ">
+            <p>Copyright© Desing With Love Projecty Team 2022</p>
+        </div>
+    </div>
+
+    <script>
+        function zoom(e) {
+            var zoomer = e.currentTarget;
+            e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
+            e.offsetY ? offsetY = e.offsetY : offsetX = e.touches[0].pageX
+            x = offsetX / zoomer.offsetWidth * 100
+            y = offsetY / zoomer.offsetHeight * 100
+            zoomer.style.backgroundPosition = x + '% ' + y + '% ';
+        }
+    </script>
+
+</body>
+
+</html>

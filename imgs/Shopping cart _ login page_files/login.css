@@ -1,0 +1,48 @@
+/* nav logo image */
+.logo
+{
+    padding: 15px;
+    float: left;
+    width:20%;
+}
+
+.logo img {
+    width: 100%; /* image full width from the logo */
+}
+/* nav list */
+ul
+{
+    float: right;
+}
+/* list display */
+nav ul li 
+{
+    padding: 5px 20px;
+    margin: 10px;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+nav li:hover 
+{
+    padding: 5px;
+    border: 2px solid rgb(216, 190, 20);
+  
+}
+nav li a:hover
+{
+    color: black; 
+}
+
+
+/* header of sign in  h2  of form*/
+
+#example
+{
+   font-size: 50px;
+  text-transform: capitalize;
+   text-align: center;
+
+}

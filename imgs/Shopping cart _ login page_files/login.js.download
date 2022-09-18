@@ -1,0 +1,23 @@
+let username =document.getElementById('username');
+let password=document.getElementById('password');  
+let signIn=document.getElementById('signIn');
+let getUser = localStorage.getItem('username');
+let getPassword = localStorage.getItem('password');
+
+// check if username    and password are valid
+signIn.addEventListener('click', function(e) {
+    e.preventDefault();
+        if(username.value=="" || password.value=="")
+    {
+        alert("Please enter a Data");
+    }
+    else
+    {
+       if((getUser && getUser===username.value)&&(getPassword && getPassword===password.value))
+       {
+        setTimeout(()=>{
+            window.location.href = "index.html";
+        },1500);
+       }
+    }
+})

@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+nav {
+    width: 5300px;
+    background-color: red;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    transform: translateY(5px);
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+.form {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: auto;
+    gap: 20px;
+}
+
+
+/*side menu */
+
+#mySidenav a {
+    position: absolute;
+    left: -160px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 200px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    transform: translateY(50px);
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#control {
+    top: 20px;
+    background-color: turquoise;
+}
+
+#create {
+    top: 80px;
+    background-color: steelblue;
+}
+
+#update {
+    top: 140px;
+    background-color: plum;
+}
+
+#report {
+    top: 200px;
+    background-color: indianred;
+}
+
+#view {
+    top: 260px;
+    background-color: lightskyblue;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    max-width: 100%;
+    font-weight: 700;
+
+}
+
+.space {
+    transform: translateX(-160px) translateY(30px);
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    width: 50% !important;
+    padding: 12px !important;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 15px;
+    background-color: #2196F3
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 37px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+table {
+    margin-top: 10px;
+    width: 100%;
+}
+
+th {
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+}
+
+td input {
+    padding: 8px;
+    border-radius: 20px;
+}
+
+
+/* tr:hover {
+    background-color: #DDD;
+} */
+
+td button {
+    width: 500px
+    
+}
+@media screen and (max-width:1000px) {
+    *{
+        border: 2px solid red;
+    }
+    .form {
+        
+            align-items: center;
+            width: 94%;
+        }
+        .form input{
+            width:22%;
+    
+        }
+}
+@media screen and (max-width:600px) {
+    .form{
+        align-items: center;
+        width: 94%;
+    }
+    .form label{
+        display: contents;
+    }
+    .form input{
+        width: 88%;
+
+    }
+}

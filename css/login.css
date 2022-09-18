@@ -1,0 +1,32 @@
+/* for all body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* form */
+
+body {
+    background-image: url(https://cdn1.vectorstock.com/i/1000x1000/57/25/sign-in-with-arrow-icon-login-symbol-vector-10825725.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+ .form-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+@media screen and (max-width:1000px) {
+ 
+    .container{
+       max-width: 715px;
+
+    }
+    .text-center{
+        margin: 24% 0px;
+    }
+}
